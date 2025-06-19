@@ -1,0 +1,689 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<title>Sky Forms</title>
+		
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+		
+		<link rel="stylesheet" href="css/demo.css" />
+		<link rel="stylesheet" href="css/sky-forms.css" />
+		<link rel="stylesheet" href="css/sky-forms-orange.css" />
+		<!--[if lt IE 9]>
+			<link rel="stylesheet" href="css/sky-forms-ie8.css">
+		<![endif]-->
+		
+		<!--[if lt IE 10]>
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+			<script src="js/jquery.placeholder.min.js"></script>
+		<![endif]-->		
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+			<script src="js/sky-forms-ie8.js"></script>
+		<![endif]-->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+	<body class="bg-orange">
+		<div class="body">			
+		
+        
+       
+        <?
+								if( $_GET["sucesso"] == "email")
+								{ 
+?>
+									<p style="color: green;">Obrigado pelo seu envio.</p>
+<? 
+								}
+								else
+								{
+?>
+        
+		  <!-- Orange color scheme -->
+			<form action="" class="sky-form" />
+				<header>Brief Logo</header>
+				
+				<fieldset>
+					<section>
+						<label class="label">Nome da Empresa</label>
+						<label class="input">
+							<input type="text" name="nome"/>
+						</label>
+					</section>
+                    
+                    <section>
+						<label class="label">Slogan da Empresa</label>
+						<label class="input">
+							<input type="text" name="slogan"/>
+						</label>
+					</section>
+                    
+                    <section>
+						<label class="label">O que fazemos</label>
+						<label class="textarea textarea-resizable">
+							<textarea rows="3" name="oqfazemos"></textarea>
+                            
+                            
+                            
+						</label>
+                        
+                        <div class="note"><strong>Exemplo:</strong> A "nome da Empresa" é vocacionada na formação de formadores especializados em medicina dentária.</div>
+					</section>
+                    
+                    <section>
+						<label class="label">Área de negócio</label>
+						<label class="textarea textarea-expandable">
+							<textarea rows="3" name="areanegocios"></textarea>
+						</label>
+						<div class="note"><strong>Ex:</strong> Marketing. Vendas. Design.</div>
+					</section>
+                    
+                    <section>
+						<label class="label">3 items a comunicar no logo</label>
+						<label class="textarea textarea-expandable">
+							<textarea rows="3" name="items"></textarea>
+						</label>
+						<div class="note"><strong>Exemplo:</strong> 1. Experiência e dedicação | 2. Simple, mensagem direta, fácil, classico | 3. Seguro e Confiável</div>
+					</section>
+                    
+                    
+                    <section>
+						<label class="label">Publico alvo</label>
+						<label class="textarea">
+							<textarea rows="3" name="publicoalvo"></textarea>
+						</label>
+						<div class="note"><strong>Ex:</strong> raparigas dos 25 - 35, que gostam de.. </div>
+					</section>
+                    
+                    
+                    </fieldset>
+                    
+                    
+                    <fieldset>
+					<section>
+                    <div class="row">
+                    
+						
+					  <section class="col col-5">				
+							<label class="label">Escolha o tipos(s) de logo que pretende ver:</label>
+      
+        <img src="tipos_logos/pictoral.gif" width="399" height="48">     
+						  <label class="toggle">
+      <input type="checkbox" name="wordmark" checked="" />
+      <i></i>Wordmark</label><img src="tipos_logos/pictoral.gif" width="399" height="48">     
+						  <label class="toggle">
+      <input type="checkbox" name="letterform" checked="" />
+      <i></i>Letterform Mark</label><img src="tipos_logos/pictoral.gif" width="399" height="48">     
+						  <label class="toggle">
+      <input type="checkbox" name="abstracto" checked="" />
+      <i></i>Logo Abstracto</label><img src="tipos_logos/pictoral.gif" width="399" height="48">     
+						  <label class="toggle">
+      <input type="checkbox" name="figurativo" checked="" />
+      Logo Figurativo</label><img src="tipos_logos/pictoral.gif" width="399" height="48">     
+						  <label class="toggle">
+      <input type="checkbox" name="emblemas" checked="" />
+      <i></i>Emblemas</label><img src="tipos_logos/abstract.gif" width="400" height="54">
+                        <label class="toggle"><input type="checkbox" name="mascote" />
+                        <i></i>Maskote</label>
+                        
+                        <img src="tipos_logos/character.gif" width="400" height="49">
+							<label class="toggle"><input type="checkbox" name="web2" />
+					  <i></i>Web 2.0</label></section>
+					</div>
+                    
+                    </section>
+                    
+                    
+                    
+                    
+                     <section>
+						<label class="label">Preferências de cor</label>
+						<label class="textarea textarea-expandable">
+							<textarea rows="3" name="cor"></textarea>
+						</label>
+						<div class="note"><strong>Exemplo:</strong> Gosto de Preto, Dourado, Vermelho | Não gosto de Amarelo, Roxo, Cores florescentes, néons...</div>
+					</section>
+                    
+                    
+          </fieldset>
+					
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                     <fieldset>
+					<section>
+						<label class="label">Compile os seus ficheiro num *.rar ou *.zip e anexe as suas ideias</label>
+						<label for="file" class="input input-file">
+							<div class="button"><input type="file" id="file" onchange="this.parentNode.nextSibling.value = this.value" / name="ficheiro">Procurar</div><input type="text" readonly />
+						</label>
+					</section>
+                   
+                   
+                    <section>
+						<label class="label">As nossas ideias e informações adicionais:</label>
+						<label class="textarea textarea-resizable">
+							<textarea rows="3" name"ideias"></textarea>
+						</label>
+                        <div class="note"><strong>Ex:</strong> Ando a procura de algo icónico que as pessoas possam reconhecer sem o texto. Tradicional. Que identifique a nossa cidade. Que transpareça seriedade respeito, feito para um público chique.</div>
+                        
+					</section>
+                    
+                    
+                       <section>
+						<label class="label">Onde vai ser usado o logo:</label>
+						<label class="textarea textarea-expandable">
+							<textarea rows="3" name="ondeeusado"></textarea>
+						</label>
+						<div class="note"><strong>Exemplo:</strong> Impressão, Tshirts, Canecas, Televisão... </div>
+					</section>
+                 
+                    
+                    
+                    </fieldset>
+                    
+                    
+                    				
+						
+				
+				
+				<fieldset>
+                
+<table width="415" border="0" bgcolor="#FFCC66" cellpadding="11" cellspacing="11">
+  <tr>
+    <td width="101">&nbsp;</td>
+    <td width="13" bgcolor="#FFFF00" align="center">1</td>
+    <td width="13" bgcolor="#FFFF00" align="center">2</td>
+    <td width="14" bgcolor="#FFFF00" align="center">3</td>
+    <td width="13" bgcolor="#FFFF00" align="center">4</td>
+    <td width="13" bgcolor="#FFFF00" align="center">5</td>
+    <td width="112">&nbsp;</td>
+    <td width="102">&nbsp;</td>
+  </tr>
+  <tr>
+    <td bgcolor="#FF9900" align="center">Feminino</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td bgcolor="#FF9900" align="center">Masculino</td>
+    <td><section>
+						<label class="label">Select</label>
+						<label class="select">
+							<select name="1">
+								<option value="0" />1
+								<option value="1" />2
+								<option value="2" />3
+								<option value="3" />4
+								<option value="4" />5
+							</select>
+							<i></i>
+						</label>
+					</section></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FF9900" align="center">Moderno</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td bgcolor="#FF9900" align="center">Clássico</td>
+    <td><section>
+						<label class="label">Select</label>
+						<label class="select">
+							<select name="2">
+								<option value="0" />1
+								<option value="1" />2
+								<option value="2" />3
+								<option value="3" />4
+								<option value="4" />5
+							</select>
+							<i></i>
+						</label>
+					</section></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FF9900" align="center">Exótico</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td bgcolor="#FF9900" align="center">Comum</td>
+    <td><section>
+						<label class="label">Select</label>
+						<label class="select">
+							<select name="3">
+								<option value="0" />1
+								<option value="1" />2
+								<option value="2" />3
+								<option value="3" />4
+								<option value="4" />5
+							</select>
+							<i></i>
+						</label>
+					</section></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FF9900" align="center">Desportivo</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td bgcolor="#FF9900" align="center">Elegante</td>
+    <td><section>
+						<label class="label">Select</label>
+						<label class="select">
+							<select name="4">
+								<option value="0" />1
+								<option value="1" />2
+								<option value="2" />3
+								<option value="3" />4
+								<option value="4" />5
+							</select>
+							<i></i>
+						</label>
+					</section></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FF9900" align="center">Aventureiro</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td bgcolor="#FF9900" align="center">Seguro</td>
+    <td><section>
+						<label class="label">Select</label>
+						<label class="select">
+							<select name="5">
+								<option value="0" />1
+								<option value="1" />2
+								<option value="2" />3
+								<option value="3" />4
+								<option value="4" />5
+							</select>
+							<i></i>
+						</label>
+					</section></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FF9900" align="center">Calmo</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td bgcolor="#FF9900" align="center">Forte</td>
+    <td><section>
+						<label class="label">Select</label>
+						<label class="select">
+							<select name="6">
+								<option value="0" />1
+								<option value="1" />2
+								<option value="2" />3
+								<option value="3" />4
+								<option value="4" />5
+							</select>
+							<i></i>
+						</label>
+					</section></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FF9900" align="center">Subtil</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td bgcolor="#FF9900" align="center">Brilhante</td>
+    <td><section>
+						<label class="label">Select</label>
+						<label class="select">
+							<select name="7">
+								<option value="0" />1
+								<option value="1" />2
+								<option value="2" />3
+								<option value="3" />4
+								<option value="4" />5
+							</select>
+							<i></i>
+						</label>
+					</section></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FF9900" align="center">Cinzento</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td bgcolor="#FF9900" align="center">Colorido</td>
+    <td><section>
+						<label class="label">Select</label>
+						<label class="select">
+							<select name="8">
+								<option value="0" />1
+								<option value="1" />2
+								<option value="2" />3
+								<option value="3" />4
+								<option value="4" />5
+							</select>
+							<i></i>
+						</label>
+					</section></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FF9900" align="center">Simples</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td bgcolor="#FF9900" align="center">Complexo</td>
+    <td><section>
+						<label class="label">Select</label>
+						<label class="select">
+							<select name="9">
+								<option value="0" />1
+								<option value="1" />2
+								<option value="2" />3
+								<option value="3" />4
+								<option value="4" />5
+							</select>
+							<i></i>
+						</label>
+					</section></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FF9900" align="center">Rude</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td bgcolor="#FF9900" align="center">Definido</td>
+    <td><section>
+						<label class="label">Select</label>
+						<label class="select">
+							<select name="10">
+								<option value="0" />1
+								<option value="1" />2
+								<option value="2" />3
+								<option value="3" />4
+								<option value="4" />5
+							</select>
+							<i></i>
+						</label>
+					</section></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FF9900" align="center">Brincalhão</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td bgcolor="#FF9900" align="center">Sério</td>
+    <td><section>
+						<label class="label">Select</label>
+						<label class="select">
+							<select name="11">
+								<option value="0" />1
+								<option value="1" />2
+								<option value="2" />3
+								<option value="3" />4
+								<option value="4" />5
+							</select>
+							<i></i>
+						</label>
+					</section></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FF9900" align="center">Necessidade</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td bgcolor="#FF9900" align="center">Luxuria</td>
+    <td><section>
+						<label class="label">Select</label>
+						<label class="select">
+							<select name="12">
+								<option value="0" />1
+								<option value="1" />2
+								<option value="2" />3
+								<option value="3" />4
+								<option value="4" />5
+							</select>
+							<i></i>
+						</label>
+					</section></td>
+  </tr>
+</table>
+
+
+               <!-- 
+					<section>
+						<label class="label">Select</label>
+						<label class="select">
+							<select>
+								<option value="0" />1
+								<option value="1" />2
+								<option value="2" />3
+								<option value="3" />4
+								<option value="4" />5
+							</select>
+							<i></i>
+						</label>
+					</section>
+					
+					<section>
+						<label class="label">Multiple select</label>
+						<label class="select select-multiple">
+							<select multiple="">
+								<option value="1" />Alexandra
+								<option value="2" />Alice
+								<option value="3" />Anastasia
+								<option value="4" />Avelina
+								<option value="5" />Basilia
+								<option value="6" />Beatrice
+								<option value="7" />Cassandra
+								<option value="8" />Clemencia
+								<option value="9" />Desiderata
+							</select>
+						</label>
+						<div class="note"><strong>Note:</strong> hold down the ctrl/cmd button to select multiple options.</div>
+					</section>-->
+				</fieldset>
+				<!--
+				<fieldset>					
+					<section>
+						<label class="label">Textarea</label>
+						<label class="textarea">
+							<textarea rows="3"></textarea>
+						</label>
+						<div class="note"><strong>Note:</strong> height of the textarea depends on the rows attribute.</div>
+					</section>
+					
+					<section>
+						<label class="label">Textarea resizable</label>
+						<label class="textarea textarea-resizable">
+							<textarea rows="3"></textarea>
+						</label>
+					</section>
+					
+					<section>
+						<label class="label">Textarea expandable</label>
+						<label class="textarea textarea-expandable">
+							<textarea rows="3"></textarea>
+						</label>
+						<div class="note"><strong>Note:</strong> expands on focus.</div>
+					</section>
+				</fieldset>
+				
+				<fieldset>
+					<section>
+						<label class="label">Columned radios</label>
+						<div class="row">
+							<div class="col col-4">
+								<label class="radio"><input type="radio" name="radio" checked="" /><i></i>Alexandra</label>
+								<label class="radio"><input type="radio" name="radio" /><i></i>Alice</label>
+								<label class="radio"><input type="radio" name="radio" /><i></i>Anastasia</label>
+							</div>
+							<div class="col col-4">
+								<label class="radio"><input type="radio" name="radio" /><i></i>Avelina</label>
+								<label class="radio"><input type="radio" name="radio" /><i></i>Basilia</label>
+								<label class="radio"><input type="radio" name="radio" /><i></i>Beatrice</label>
+							</div>
+							<div class="col col-4">
+								<label class="radio"><input type="radio" name="radio" /><i></i>Cassandra</label>
+								<label class="radio"><input type="radio" name="radio" /><i></i>Clemencia</label>
+								<label class="radio"><input type="radio" name="radio" /><i></i>Desiderata</label>
+							</div>
+						</div>						
+					</section>
+					
+					<section>
+						<label class="label">Inline radios</label>
+						<div class="inline-group">
+							<label class="radio"><input type="radio" name="radio-inline" checked="" /><i></i>Alexandra</label>
+							<label class="radio"><input type="radio" name="radio-inline" /><i></i>Alice</label>
+							<label class="radio"><input type="radio" name="radio-inline" /><i></i>Anastasia</label>
+							<label class="radio"><input type="radio" name="radio-inline" /><i></i>Avelina</label>
+							<label class="radio"><input type="radio" name="radio-inline" /><i></i>Beatrice</label>
+						</div>
+					</section>
+				</fieldset>
+				
+				<fieldset>
+					<section>
+						<label class="label">Columned checkboxes</label>
+						<div class="row">
+							<div class="col col-4">
+								<label class="checkbox"><input type="checkbox" name="checkbox" checked="" /><i></i>Alexandra</label>
+								<label class="checkbox"><input type="checkbox" name="checkbox" /><i></i>Alice</label>
+								<label class="checkbox"><input type="checkbox" name="checkbox" /><i></i>Anastasia</label>
+							</div>
+							<div class="col col-4">
+								<label class="checkbox"><input type="checkbox" name="checkbox" /><i></i>Avelina</label>
+								<label class="checkbox"><input type="checkbox" name="checkbox" /><i></i>Basilia</label>
+								<label class="checkbox"><input type="checkbox" name="checkbox" /><i></i>Beatrice</label>
+							</div>
+							<div class="col col-4">
+								<label class="checkbox"><input type="checkbox" name="checkbox" /><i></i>Cassandra</label>
+								<label class="checkbox"><input type="checkbox" name="checkbox" /><i></i>Clemencia</label>
+								<label class="checkbox"><input type="checkbox" name="checkbox" /><i></i>Desiderata</label>
+							</div>
+						</div>
+					</section>
+					
+					<section>
+						<label class="label">Inline checkboxes</label>
+						<div class="inline-group">
+							<label class="checkbox"><input type="checkbox" name="checkbox-inline" checked="" /><i></i>Alexandra</label>
+							<label class="checkbox"><input type="checkbox" name="checkbox-inline" /><i></i>Alice</label>
+							<label class="checkbox"><input type="checkbox" name="checkbox-inline" /><i></i>Anastasia</label>
+							<label class="checkbox"><input type="checkbox" name="checkbox-inline" /><i></i>Avelina</label>
+							<label class="checkbox"><input type="checkbox" name="checkbox-inline" /><i></i>Beatrice</label>
+						</div>
+					</section>
+				</fieldset>
+				
+				<fieldset>
+					<div class="row">
+						<section class="col col-5">
+							<label class="label">Toggles based on radios</label>
+							<label class="toggle"><input type="radio" name="radio-toggle" checked="" /><i></i>Alexandra</label>
+							<label class="toggle"><input type="radio" name="radio-toggle" /><i></i>Anastasia</label>
+							<label class="toggle"><input type="radio" name="radio-toggle" /><i></i>Avelina</label>
+						</section>
+						
+						<div class="col col-2"></div>
+						
+						<section class="col col-5">				
+							<label class="label">Toggles based on checkboxes</label>
+							<label class="toggle"><input type="checkbox" name="checkbox-toggle" checked="" /><i></i>Cassandra</label>
+							<label class="toggle"><input type="checkbox" name="checkbox-toggle" /><i></i>Clemencia</label>
+							<label class="toggle"><input type="checkbox" name="checkbox-toggle" /><i></i>Desiderata</label>	
+						</section>
+					</div>
+				</fieldset>
+				
+				<fieldset>					
+					<section>
+						<label class="label">Ratings with different icons</label>
+						<div class="rating">
+							<input type="radio" name="stars-rating" id="stars-rating-5" />
+							<label for="stars-rating-5"><i class="icon-star"></i></label>
+							<input type="radio" name="stars-rating" id="stars-rating-4" />
+							<label for="stars-rating-4"><i class="icon-star"></i></label>
+							<input type="radio" name="stars-rating" id="stars-rating-3" />
+							<label for="stars-rating-3"><i class="icon-star"></i></label>
+							<input type="radio" name="stars-rating" id="stars-rating-2" />
+							<label for="stars-rating-2"><i class="icon-star"></i></label>
+							<input type="radio" name="stars-rating" id="stars-rating-1" />
+							<label for="stars-rating-1"><i class="icon-star"></i></label>
+							Stars
+						</div>
+						
+						<div class="rating">
+							<input type="radio" name="trophies-rating" id="trophies-rating-7" />
+							<label for="trophies-rating-7"><i class="icon-trophy"></i></label>
+							<input type="radio" name="trophies-rating" id="trophies-rating-6" />
+							<label for="trophies-rating-6"><i class="icon-trophy"></i></label>
+							<input type="radio" name="trophies-rating" id="trophies-rating-5" />
+							<label for="trophies-rating-5"><i class="icon-trophy"></i></label>
+							<input type="radio" name="trophies-rating" id="trophies-rating-4" />
+							<label for="trophies-rating-4"><i class="icon-trophy"></i></label>
+							<input type="radio" name="trophies-rating" id="trophies-rating-3" />
+							<label for="trophies-rating-3"><i class="icon-trophy"></i></label>
+							<input type="radio" name="trophies-rating" id="trophies-rating-2" />
+							<label for="trophies-rating-2"><i class="icon-trophy"></i></label>
+							<input type="radio" name="trophies-rating" id="trophies-rating-1" />
+							<label for="trophies-rating-1"><i class="icon-trophy"></i></label>
+							Trophies
+						</div>	
+						
+						<div class="rating">
+							<input type="radio" name="asterisks-rating" id="asterisks-rating-10" />
+							<label for="asterisks-rating-10"><i class="icon-asterisk"></i></label>
+							<input type="radio" name="asterisks-rating" id="asterisks-rating-9" />
+							<label for="asterisks-rating-9"><i class="icon-asterisk"></i></label>
+							<input type="radio" name="asterisks-rating" id="asterisks-rating-8" />
+							<label for="asterisks-rating-8"><i class="icon-asterisk"></i></label>
+							<input type="radio" name="asterisks-rating" id="asterisks-rating-7" />
+							<label for="asterisks-rating-7"><i class="icon-asterisk"></i></label>
+							<input type="radio" name="asterisks-rating" id="asterisks-rating-6" />
+							<label for="asterisks-rating-6"><i class="icon-asterisk"></i></label>
+							<input type="radio" name="asterisks-rating" id="asterisks-rating-5" />
+							<label for="asterisks-rating-5"><i class="icon-asterisk"></i></label>
+							<input type="radio" name="asterisks-rating" id="asterisks-rating-4" />
+							<label for="asterisks-rating-4"><i class="icon-asterisk"></i></label>
+							<input type="radio" name="asterisks-rating" id="asterisks-rating-3" />
+							<label for="asterisks-rating-3"><i class="icon-asterisk"></i></label>
+							<input type="radio" name="asterisks-rating" id="asterisks-rating-2" />
+							<label for="asterisks-rating-2"><i class="icon-asterisk"></i></label>
+							<input type="radio" name="asterisks-rating" id="asterisks-rating-1" />
+							<label for="asterisks-rating-1"><i class="icon-asterisk"></i></label>
+							Asterisks
+						</div>
+						<div class="note"><strong>Note:</strong> you can use more than 300 vector icons for rating.</div>
+					</section>
+				</fieldset>
+				-->
+		  <footer>
+					<button type="submit" class="button">Enviar</button>
+					<button type="button" class="button button-secondary" onclick="window.history.back();">Limpar</button>
+				</footer>
+			</form>
+			<!--/ Orange color scheme -->			
+		</div>
+	</body>
+</html>
